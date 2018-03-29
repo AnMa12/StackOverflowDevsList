@@ -18,9 +18,9 @@ window.onload = function() {
 		
 		devImg.setAttribute("src",result.items[localStorage.getItem("orderNr")].profile_image);
 		
-		devBadges.innerHTML = "Badges: gold - " + result.items[localStorage.getItem("orderNr")].badge_counts.gold + 
-				" | silver - " + result.items[localStorage.getItem("orderNr")].badge_counts.silver + " | bronze - " + 
-				result.items[localStorage.getItem("orderNr")].badge_counts.bronze;
+		devBadges.innerHTML = "Badges: " + result.items[localStorage.getItem("orderNr")].badge_counts.gold + 
+				" gold " + result.items[localStorage.getItem("orderNr")].badge_counts.silver + " | silver " + 
+				result.items[localStorage.getItem("orderNr")].badge_counts.bronze + " | bronze ";
 		devBadges.setAttribute("id","devBadges");
 
 		var newDiv = document.createElement('div');  //div contains name and photo
@@ -35,7 +35,3 @@ window.onload = function() {
 		  }
     });
 };
-
-function backPage() {
-	var myWindow = window.open("mainPage.html", "_self");
-}
