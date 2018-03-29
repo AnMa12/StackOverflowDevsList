@@ -10,7 +10,7 @@ section {
 #divTitle {
 	position: relative;
 	z-index:500;
-	margin: 4% 20% 0% 20%;
+	margin: 0% 20% 0% 20%;
 	padding: 1%;
 	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 	/*background-color: #343330;*/
@@ -34,12 +34,19 @@ h1 {
 /* --------------------------------------- */
 
 /* users list */
+
+#divList {
+	margin: 0% 22% 4% 22%;
+	padding: 0%;
+	/*background-color: rgb(59, 64, 69);*/
+}
+
 .todo-list {
-  background: #FFF; 
+  background: #FFF;
   font-size: 20px;
   max-width: 30em;
-  margin: auto;
-  padding: 0.5em 1em;
+  margin : 0em auto;
+  padding: 0em 1em 0.5em 1em;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -75,11 +82,6 @@ h1 {
 	color: saturate(#1B4A4E,15%);
 }
 
-#divList {
-	margin: 0% 22% 4% 22%;
-	padding: 0%;
-}
-
 li img {
 	width: 90px;
 	height: 65px;
@@ -94,6 +96,10 @@ li img {
 	/*border: 2px solid black;*/
 }
 
+#divBtn {
+	text-align: center;
+}
+
 #divButtons {
 	position: absolute;
 	margin: auto; 
@@ -102,7 +108,7 @@ li img {
 	left: 0; 
 	bottom: 0; 
 	right: 0; 
-	z-index: -1;
+	z-index: -5;
 	/*border: 2px solid black;*/
 	text-align: center;
 }
@@ -111,28 +117,29 @@ li img {
   font-family: 'Open Sans', 'sans-serif';
   padding: 15px 25px;
   font-size: 22px;
-  width: 160px;
+  /*width: 190px;*/
+  height: 15px;
   text-decoration: none;
   color: #fff;
   display: inline-block;
-  transform: rotate(270deg);
+  /*transform: rotate(270deg);*/
   /*writing-mode: vertical-lr;
   text-orientation: upright;*/
 }
 
 .btnAlph {
-	 margin: 3.8em 0em 0em 13em;
+	 margin: 3.7em 0em 0em 9.5em;
 }
 
 .btnRank {
-	 margin: 3.8em 13em 0em 0em;
+	 margin: 3.7em 9.5em 0em 0em;
 }
 
 .btn:active {
   transition: 20ms linear;
   opacity: .75;
   background-color: #4C5155;
-  transform: rotate(270deg);
+  /*transform: rotate(270deg);*/
 
 }
 
@@ -151,3 +158,16 @@ a p {
   padding-top: 20px;
 }
 /* -------------- */
+
+/* input design */
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+/* ------------ */

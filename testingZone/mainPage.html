@@ -16,20 +16,28 @@
 	</head>
 	
 	<body>
+		
+		<!--
 		<div id = "divButtons">
 				<a id = "nameSort" onclick="sortByRank()" class="btn btnRank blue">Sort by RANK</a>
 				<a id = "nameSort" onclick="sortByName()" class="btn btnAlph blue">Sort by NAME</a>
-				
-			</div>
+		</div>
+		-->
+		
+		<div id = "divBtn">
+			<a id = "nameSort" onclick="sortByRank()" class="btn btnRank blue">Sort by RANK</a>
+			<a id = "nameSort" onclick="sortByName()" class="btn btnAlph blue">Sort by NAME</a>
+		</div>
+		
 		<div id = "divTitle">
 			<h1>StackOverflow <span>Developers List</span></h1>
 		</div>
 		
 		<div id = "container">
 			<div id = "divList">
+			<input type="text" id="myInput" onkeyup="filterList()" placeholder="Search for names.." title="Type in a name">
 				<!-- javascript -->
 			</div>
-			
 		<div>
 
 	</body>
